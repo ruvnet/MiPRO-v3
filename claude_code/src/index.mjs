@@ -5,6 +5,10 @@
 import { initialize } from './cli/app.mjs';
 import { parseArgs, printHelp } from './cli/parse-args.mjs';
 import { VERSION } from './config/constants.mjs';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 // Parse command line arguments
 const options = parseArgs(process.argv);

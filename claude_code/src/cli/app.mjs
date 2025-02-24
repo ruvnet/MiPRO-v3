@@ -9,23 +9,27 @@ import * as api from '../api/client.mjs';
 import * as commands from './commands.mjs';
 import * as git from '../git/git.mjs';
 import { VERSION } from '../config/constants.mjs';
+import { loadEnv } from '../config/env.mjs';
 
 /**
  * Initialize the application
  */
 export async function initialize() {
   try {
+    // Load environment variables
+    loadEnv();
+    
     // Show welcome message
     ui.showWelcome();
     console.log(`Open Claude v${VERSION}`);
     
     // Bypass authentication for development
-  console.log('Authentication bypassed for development');
-  // const token = await auth.authenticate();
-  // if (!token) {
-  //   ui.showError('Authentication failed. Please try again.');
-  //   process.exit(1);
-  // }
+    console.log('Authentication bypassed for development');
+    // const token = await auth.authenticate();
+    // if (!token) {
+    //   ui.showError('Authentication failed. Please try again.');
+    //   process.exit(1);
+    // }
     
     // Check if current directory is a git repository
     const isGitRepo = await git.isGitRepo();

@@ -4,6 +4,9 @@
   "type": "module",
   "description": "Core modules for Claude Code CLI",
   "main": "index.mjs",
+  "bin": {
+    "claude": "../cli.mjs"
+  },
   "private": true,
   "author": "Boris Cherny <boris@anthropic.com>",
   "license": "SEE LICENSE IN README.md",
