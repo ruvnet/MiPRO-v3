@@ -1,3 +1,0 @@
-Claude Code is a Beta research preview per our [Commercial Terms of Service](https://www.anthropic.com/legal/commercial-terms). If Customer chooses to send us feedback about Claude Code, such as transcripts of Customer Claude Code usage, Anthropic may use that feedback to debug related issues or to improve Claude Code’s functionality (e.g., to reduce the risk of similar bugs occurring in the future). Anthropic will not train models using feedback from Claude Code.
-
-© Anthropic PBC. All rights reserved. Use is subject to Anthropic's [Commercial Terms of Service](https://www.anthropic.com/legal/commercial-terms).
